@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Subscription Form</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="row">
+                <div class="col">
+                    <label for="fname">First Name<span style="color: red;"> *</span></label>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="First Name" id="fname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Last Name" id="lname">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="dob">Date of Birth<span style="color: red;"> *</span></label>
+                </div>
+                <div class="col">
+                    <input type="date" id="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    Gender<span style="color: red;"> *</span>
+                </div>
+                <div class="col">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    City<span style="color: red;"> *</span>
+                </div>
+                <div class="col">
+                    <select>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Pune">Pune</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="phone">Phone<span style="color: red;"> *</span></label>
+                </div>
+                <div class="col">
+                    <input type="tel" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" id="phone">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email<span style="color: red;"> *</span></label>
+                </div>
+                <div class="col">
+                    <input type="email" placeholder="Email" id="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="description">Description</label>
+                </div>
+                <div class="col">
+                    <textarea rows="5" id="description"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <div class="sub"><button class="col" type="submit">Submit</button></div>
+    </form>
+</body>
+
+</html>

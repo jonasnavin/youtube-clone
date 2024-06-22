@@ -1,0 +1,92 @@
+input::placeholder {
+    font-size: 0.8rem;
+    color: rgb(98, 96, 96);
+}
+
+fieldset {
+    width: 90vw;
+    max-height: 70vh;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sub button {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    height: 2rem;
+    background-color: yellow;
+    color: white;
+    background-color: mediumblue;
+}
+
+button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.row {
+    width: 42vw;
+    margin: 0.5rem 0;
+}
+
+.col {
+    padding: 0.5rem 0.5rem 0;
+}
+
+.col input,
+textarea,
+select {
+    width: 100%;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.263);
+    border-radius: 5px;
+    padding-left: 0.5rem;
+}
+
+.col input,
+select {
+    height: 2rem;
+}
+
+.col input:focus,
+textarea:focus,
+select:focus {
+    outline-color: rgba(128, 128, 128, 0.825);
+}
+
+.col input[type='file'] {
+    font-size: 1rem;
+}
+
+.col input[type="radio"] {
+    width: initial;
+    height: initial;
+    margin-right: 0.5rem;
+}
+
+.col input[type="radio"]+label {
+    margin-right: 1rem;
+}
+
+
+select {
+    font-size: 1rem;
+}
+
+@media (max-width: 660px) {
+    fieldset {
+        flex-wrap: nowrap;
+        max-height: 10000vh;
+        width: 85vw;
+    }
+
+    .row {
+        width: 100%;
+    }
+}
