@@ -1,1 +1,1 @@
-# jonasnavin.github.io-youtube-clone
+# jonasnavin.github.io/youtube-clone
